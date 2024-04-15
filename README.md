@@ -4,22 +4,28 @@
 - Maven 3 or later
 - MySQL 5.6 or later
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
-# Database
-Here,we used Mysql DB 
-MSQL DB Installation Steps for Linux ubuntu 14.04:
-- $ sudo apt-get update
-- $ sudo apt-get install mysql-server
+# FLOW OF EXECUTION
 
-Then look for the file :
-- /src/main/resources/accountsdb
-- accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < accountsdb.sql
+1. Login to AWS Account
+
+2. Create Key Pairs
+
+3. Create Security groups
+
+4. Launch Instances with user data [BASH SCRIPTS]
+
+5. Update IP to name mapping in route 53
+
+6. Build Application from source code
+
+7. Upload to S3 bucket
+
+8. Download artifact to Tomcat Ec2 Inatance
+
+9. Setup ELB with HTTPS [Cert from Amazon Certificate Manager]Map
+
+10. ELB Endpoint to website name in Godaddy DNS
+
+11. Verify
 
 
